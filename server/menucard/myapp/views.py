@@ -14,7 +14,8 @@ from rest_framework import status
 # from django.contrib.auth import logout
 
 
-
+def home(request):
+    return render(request,'home.html')
 
 # code for login validation
 class LoginView(APIView):
